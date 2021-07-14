@@ -51,17 +51,36 @@
     ],
     "virtualNetwork":[
         {
-            "name":"not used with schema",
-            "location":"westus",
-            "CIDR":"10.20.0.0/16",
-            "subnet":[
+            "hub":[
                 {
-                    "name":"GatewaySubnet",
-                    "CIDR":"10.20.0.0/24"
-                },
-                {
-                    "name":"ServiceSubnet",
-                    "CIDR":"10.20.100.0/24"
+                    "name":"not used with schema",
+                    "location":"westus",
+                    "CIDR":"10.20.0.0/16",
+                    "subnet":[
+                        {
+                            "name":"GatewaySubnet",
+                            "CIDR":"10.20.0.0/24"
+                        },
+                        {
+                            "name":"ServiceSubnet",
+                            "CIDR":"10.20.100.0/24"
+                        }
+                    ],
+                    "resourceGroup":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
+                    "routeTable":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
+                    "virtualMachine":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ]
                 }
             ],
             "spoke":[
@@ -86,35 +105,39 @@
                         }
                     ]
                 }
-            ],
-            "resourceGroup":[
-                {
-                    "name":"not used with schema"
-                }
-            ],
-            "routeTable":[
-                {
-                    "name":"not used with schema"
-                }
-            ],
-            "virtualMachine":[
-                {
-                    "name":"not used with schema"
-                }
             ]
         },
         {
-            "name":"not used with schema",
-            "location":"eastus",
-            "CIDR":"10.50.0.0/16",
-            "subnet":[
+            "hub":[
                 {
-                    "name":"GatewaySubnet",
-                    "CIDR":"10.50.0.0/24"
-                },
-                {
-                    "name":"ServiceSubnet",
-                    "CIDR":"10.50.100.0/24"
+                    "name":"not used with schema",
+                    "location":"eastus",
+                    "CIDR":"10.50.0.0/16",
+                    "subnet":[
+                        {
+                            "name":"GatewaySubnet",
+                            "CIDR":"10.50.0.0/24"
+                        },
+                        {
+                            "name":"ServiceSubnet",
+                            "CIDR":"10.50.100.0/24"
+                        }
+                    ],
+                    "resourceGroup":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
+                    "routeTable":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
+                    "virtualMachine":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ]
                 }
             ],
             "spoke":[
@@ -138,21 +161,6 @@
                             "name":"not used with schema"
                         }
                     ]
-                }
-            ],
-            "resourceGroup":[
-                {
-                    "name":"not used with schema"
-                }
-            ],
-            "routeTable":[
-                {
-                    "name":"not used with schema"
-                }
-            ],
-            "virtualMachine":[
-                {
-                    "name":"not used with schema"
                 }
             ]
         }

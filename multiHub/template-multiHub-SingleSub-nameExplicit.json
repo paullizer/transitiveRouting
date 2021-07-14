@@ -51,17 +51,36 @@
     ],
     "virtualNetwork":[
         {
-            "name":"VNET-West-Hub",
-            "location":"westus",
-            "CIDR":"10.20.0.0/16",
-            "subnet":[
+            "hub":[
                 {
-                    "name":"GatewaySubnet",
-                    "CIDR":"10.20.0.0/24"
-                },
-                {
-                    "name":"ServiceSubnet",
-                    "CIDR":"10.20.100.0/24"
+                    "name":"VNET-West-Hub",
+                    "location":"westus",
+                    "CIDR":"10.20.0.0/16",
+                    "subnet":[
+                        {
+                            "name":"GatewaySubnet",
+                            "CIDR":"10.20.0.0/24"
+                        },
+                        {
+                            "name":"ServiceSubnet",
+                            "CIDR":"10.20.100.0/24"
+                        }
+                    ],
+                    "resourceGroup":[
+                        {
+                            "name":"RG-West-Hub"
+                        }
+                    ],
+                    "routeTable":[
+                        {
+                            "name":"RT-West-Hub"
+                        }
+                    ],
+                    "virtualMachine":[
+                        {
+                            "name":"VM-West-Hub"
+                        }
+                    ]
                 }
             ],
             "spoke":[
@@ -86,35 +105,39 @@
                         }
                     ]
                 }
-            ],
-            "resourceGroup":[
-                {
-                    "name":"RG-West-Hub"
-                }
-            ],
-            "routeTable":[
-                {
-                    "name":"RT-West-Hub"
-                }
-            ],
-            "virtualMachine":[
-                {
-                    "name":"VM-West-Hub"
-                }
             ]
         },
         {
-            "name":"VNET-East-Hub",
-            "location":"eastus",
-            "CIDR":"10.50.0.0/16",
-            "subnet":[
+            "hub":[
                 {
-                    "name":"GatewaySubnet",
-                    "CIDR":"10.50.0.0/24"
-                },
-                {
-                    "name":"ServiceSubnet",
-                    "CIDR":"10.50.100.0/24"
+                    "name":"VNET-East-Hub",
+                    "location":"eastus",
+                    "CIDR":"10.50.0.0/16",
+                    "subnet":[
+                        {
+                            "name":"GatewaySubnet",
+                            "CIDR":"10.50.0.0/24"
+                        },
+                        {
+                            "name":"ServiceSubnet",
+                            "CIDR":"10.50.100.0/24"
+                        }
+                    ],
+                    "resourceGroup":[
+                        {
+                            "name":"RG-East-Hub"
+                        }
+                    ],
+                    "routeTable":[
+                        {
+                            "name":"RT-East-Hub"
+                        }
+                    ],
+                    "virtualMachine":[
+                        {
+                            "name":"VM-East-Hub"
+                        }
+                    ]
                 }
             ],
             "spoke":[
@@ -138,21 +161,6 @@
                             "name":"VM-East-Spoke"
                         }
                     ]
-                }
-            ],
-            "resourceGroup":[
-                {
-                    "name":"RG-East-Hub"
-                }
-            ],
-            "routeTable":[
-                {
-                    "name":"RT-East-Hub"
-                }
-            ],
-            "virtualMachine":[
-                {
-                    "name":"VM-East-Hub"
                 }
             ]
         }
