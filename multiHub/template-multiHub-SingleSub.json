@@ -8,7 +8,7 @@
     "naming":[
         {
             "type":"schema",
-            "schema":"[RESOURCE_TYPE]'-'[LOCATION]'-'[NETWORK_HIERARCHY]",
+            "schema":"[RESOURCE_TYPE]'-'[LOCATION]'-'[NETWORK_HIERARCHY]"
         }
     ],
     "virtualNetwork":[
