@@ -13,6 +13,8 @@ Coming Soon.
 ## Multi-hub Architecture
 This design works well for multi-region data center architectures. If a network is leverage two or more regional datacenters with services deployed to each then each data center should function as a single hub for that data center. When data needs to move from one datacenter's hub to a spoke of another datacenter's hub then transitive routing can be leveraged instead of peering the remote hub with the local spoke. Transitive routing supports network access between the spokes of disparate hubs.
 
+![multi-hub_singleSub](https://user-images.githubusercontent.com/34814295/125701310-e9307839-fcc7-4b0c-ad33-3e146d639637.png)
+
 ### Azure
 #### Singe Subscription
 This architecture will use Azure native services for network, routing, and route definitions. Virtual machines are deployed to each hub and spoke as a resource to validate the architecture. In a production environment, PaaS (along with IaaS) is also supported using private endpoints. This design uses a single subscription.
