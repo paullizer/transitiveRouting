@@ -30,6 +30,22 @@ This design works well for multi-region data center architectures. If a network 
 
 ![multi-hub_singleSub](https://user-images.githubusercontent.com/34814295/125701310-e9307839-fcc7-4b0c-ad33-3e146d639637.png)
 
+#### Execution
+.EXAMPLE  
+    If no parameter is defined then JSON template (https://github.com/paullizer/transitiveRouting/blob/main/multiHub/template-multiHub-SingleSub-nameSchema.json) will be used
+
+        Deploy-VirtualNetwork.ps1
+
+.EXAMPLE  
+    You can use your own configured JSON template. UNC and HTTP/HTTPS paths can be used. You should really not be using HTTP at this point, please do better.
+
+        Deploy-VirtualNetwork.ps1 -template "path:\to\tempalte.json"
+
+.EXAMPLE  
+    You can use your own configured JSON template. UNC and HTTP/HTTPS paths can be used. You should really not be using HTTP at this point, please do better.
+
+        Deploy-VirtualNetwork.ps1 -template "https://github.com/paullizer/transitiveRouting/blob/main/multiHub/template-multiHub-SingleSub-nameExplicit.json"
+
 ### Azure
 #### Singe Subscription
 This architecture will use Azure native services for network, routing, and route definitions. Virtual machines are deployed to each hub and spoke as a resource to validate the architecture. In a production environment, PaaS (along with IaaS) is also supported using private endpoints. This design uses a single subscription.
@@ -43,7 +59,6 @@ The following Azure native services are deployed:
 6. VNET Connection
 7. Route Tables
 8. Windows 2019 Datacenter Virtual Machine
-
 
 #### Multi-Subscription
 Coming Soon.
