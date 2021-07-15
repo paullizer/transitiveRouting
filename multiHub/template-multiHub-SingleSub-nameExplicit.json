@@ -71,6 +71,11 @@
                             "name":"RG-West-Hub"
                         }
                     ],
+                    "virtualNetworkGateway":[
+                        {
+                            "name":"VGW-West-Hub"
+                        }
+                    ],
                     "routeTable":[
                         {
                             "name":"RT-West-Hub"
@@ -126,6 +131,11 @@
                     "resourceGroup":[
                         {
                             "name":"RG-East-Hub"
+                        }
+                    ],
+                    "virtualNetworkGateway":[
+                        {
+                            "name":"VGW-East-Hub"
                         }
                     ],
                     "routeTable":[

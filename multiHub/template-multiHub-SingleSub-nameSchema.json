@@ -71,6 +71,11 @@
                             "name":"not used with schema"
                         }
                     ],
+                    "virtualNetworkGateway":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
                     "routeTable":[
                         {
                             "name":"not used with schema"
@@ -124,6 +129,11 @@
                         }
                     ],
                     "resourceGroup":[
+                        {
+                            "name":"not used with schema"
+                        }
+                    ],
+                    "virtualNetworkGateway":[
                         {
                             "name":"not used with schema"
                         }
