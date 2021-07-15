@@ -7,11 +7,11 @@ There are several architectures where transitive routing improves scability, imp
 - Multi-hub and Spoke
 - Cloud to On-premises
 
-### Goals
+#### Goals
 - Deploy fully customizable, fully connected, and fully routed network architecture.
 - Use hub and spoke design.
 
-### Future Updates
+#### Future Updates
 - Add Network Security Groups.
 - Azure Firewall as an option instead of Virtual Network Gateway.
 - Option to not include virtual machines.
